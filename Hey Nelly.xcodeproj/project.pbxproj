@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E46AFB042635327800AFBA4C /* Tests_iOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB032635327800AFBA4C /* Tests_iOS.swift */; };
+		E46AFB0F2635327800AFBA4C /* Tests_macOS.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB0E2635327800AFBA4C /* Tests_macOS.swift */; };
+		E46AFB112635327800AFBA4C /* Hey_NellyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFAE82635327700AFBA4C /* Hey_NellyApp.swift */; };
+		E46AFB122635327800AFBA4C /* Hey_NellyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFAE82635327700AFBA4C /* Hey_NellyApp.swift */; };
+		E46AFB132635327800AFBA4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFAE92635327700AFBA4C /* ContentView.swift */; };
+		E46AFB142635327800AFBA4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFAE92635327700AFBA4C /* ContentView.swift */; };
+		E46AFB152635327800AFBA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46AFAEA2635327800AFBA4C /* Assets.xcassets */; };
+		E46AFB162635327800AFBA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46AFAEA2635327800AFBA4C /* Assets.xcassets */; };
+		E46AFB30263532AB00AFBA4C /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46AFB2F263532AB00AFBA4C /* WidgetKit.framework */; };
+		E46AFB32263532AB00AFBA4C /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46AFB31263532AB00AFBA4C /* SwiftUI.framework */; };
+		E46AFB35263532AB00AFBA4C /* HeyNellyWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB34263532AB00AFBA4C /* HeyNellyWidget.swift */; };
+		E46AFB38263532AC00AFBA4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46AFB37263532AC00AFBA4C /* Assets.xcassets */; };
+		E46AFB3A263532AC00AFBA4C /* HeyNellyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB36263532AB00AFBA4C /* HeyNellyWidget.intentdefinition */; };
+		E46AFB3B263532AC00AFBA4C /* HeyNellyWidget.intentdefinition in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB36263532AB00AFBA4C /* HeyNellyWidget.intentdefinition */; };
+		E46AFB3E263532AC00AFBA4C /* HeyNellyWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E46AFB2D263532AB00AFBA4C /* HeyNellyWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E46AFB492635337600AFBA4C /* NellyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB482635337600AFBA4C /* NellyData.swift */; };
+		E46AFB4A2635337600AFBA4C /* NellyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB482635337600AFBA4C /* NellyData.swift */; };
+		E46AFB4B2635337600AFBA4C /* NellyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB482635337600AFBA4C /* NellyData.swift */; };
+		E46AFB522635416300AFBA4C /* ObservableNellyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB512635416300AFBA4C /* ObservableNellyData.swift */; };
+		E46AFB532635416300AFBA4C /* ObservableNellyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB512635416300AFBA4C /* ObservableNellyData.swift */; };
+		E46AFB542635416300AFBA4C /* ObservableNellyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46AFB512635416300AFBA4C /* ObservableNellyData.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E46AFB002635327800AFBA4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46AFAE32635327700AFBA4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E46AFAEE2635327800AFBA4C;
+			remoteInfo = "Hey Nelly (iOS)";
+		};
+		E46AFB0B2635327800AFBA4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46AFAE32635327700AFBA4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E46AFAF62635327800AFBA4C;
+			remoteInfo = "Hey Nelly (macOS)";
+		};
+		E46AFB3C263532AC00AFBA4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46AFAE32635327700AFBA4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E46AFB2C263532AB00AFBA4C;
+			remoteInfo = HeyNellyWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E46AFB42263532AC00AFBA4C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E46AFB3E263532AC00AFBA4C /* HeyNellyWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E46AFAE82635327700AFBA4C /* Hey_NellyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hey_NellyApp.swift; sourceTree = "<group>"; };
+		E46AFAE92635327700AFBA4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E46AFAEA2635327800AFBA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E46AFAEF2635327800AFBA4C /* Hey Nelly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hey Nelly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46AFAF22635327800AFBA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46AFAF72635327800AFBA4C /* Hey Nelly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hey Nelly.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46AFAF92635327800AFBA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46AFAFA2635327800AFBA4C /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		E46AFAFF2635327800AFBA4C /* Tests iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46AFB032635327800AFBA4C /* Tests_iOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_iOS.swift; sourceTree = "<group>"; };
+		E46AFB052635327800AFBA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46AFB0A2635327800AFBA4C /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46AFB0E2635327800AFBA4C /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
+		E46AFB102635327800AFBA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46AFB2D263532AB00AFBA4C /* HeyNellyWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = HeyNellyWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E46AFB2F263532AB00AFBA4C /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		E46AFB31263532AB00AFBA4C /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		E46AFB34263532AB00AFBA4C /* HeyNellyWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeyNellyWidget.swift; sourceTree = "<group>"; };
+		E46AFB36263532AB00AFBA4C /* HeyNellyWidget.intentdefinition */ = {isa = PBXFileReference; lastKnownFileType = file.intentdefinition; path = HeyNellyWidget.intentdefinition; sourceTree = "<group>"; };
+		E46AFB37263532AC00AFBA4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E46AFB39263532AC00AFBA4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E46AFB482635337600AFBA4C /* NellyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NellyData.swift; sourceTree = "<group>"; };
+		E46AFB512635416300AFBA4C /* ObservableNellyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableNellyData.swift; sourceTree = "<group>"; };
+		E46AFB5F2635585300AFBA4C /* Hey Nelly.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Hey Nelly.entitlements"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E46AFAEC2635327800AFBA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFAF42635327800AFBA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFAFC2635327800AFBA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFB072635327800AFBA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFB2A263532AB00AFBA4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB32263532AB00AFBA4C /* SwiftUI.framework in Frameworks */,
+				E46AFB30263532AB00AFBA4C /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E46AFAE22635327700AFBA4C = {
+			isa = PBXGroup;
+			children = (
+				E46AFB5F2635585300AFBA4C /* Hey Nelly.entitlements */,
+				E46AFAE72635327700AFBA4C /* Shared */,
+				E46AFAF12635327800AFBA4C /* iOS */,
+				E46AFAF82635327800AFBA4C /* macOS */,
+				E46AFB022635327800AFBA4C /* Tests iOS */,
+				E46AFB0D2635327800AFBA4C /* Tests macOS */,
+				E46AFB33263532AB00AFBA4C /* HeyNellyWidget */,
+				E46AFB2E263532AB00AFBA4C /* Frameworks */,
+				E46AFAF02635327800AFBA4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E46AFAE72635327700AFBA4C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFAE82635327700AFBA4C /* Hey_NellyApp.swift */,
+				E46AFAE92635327700AFBA4C /* ContentView.swift */,
+				E46AFB512635416300AFBA4C /* ObservableNellyData.swift */,
+				E46AFAEA2635327800AFBA4C /* Assets.xcassets */,
+				E46AFB482635337600AFBA4C /* NellyData.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		E46AFAF02635327800AFBA4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFAEF2635327800AFBA4C /* Hey Nelly.app */,
+				E46AFAF72635327800AFBA4C /* Hey Nelly.app */,
+				E46AFAFF2635327800AFBA4C /* Tests iOS.xctest */,
+				E46AFB0A2635327800AFBA4C /* Tests macOS.xctest */,
+				E46AFB2D263532AB00AFBA4C /* HeyNellyWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E46AFAF12635327800AFBA4C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFAF22635327800AFBA4C /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		E46AFAF82635327800AFBA4C /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFAF92635327800AFBA4C /* Info.plist */,
+				E46AFAFA2635327800AFBA4C /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		E46AFB022635327800AFBA4C /* Tests iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFB032635327800AFBA4C /* Tests_iOS.swift */,
+				E46AFB052635327800AFBA4C /* Info.plist */,
+			);
+			path = "Tests iOS";
+			sourceTree = "<group>";
+		};
+		E46AFB0D2635327800AFBA4C /* Tests macOS */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFB0E2635327800AFBA4C /* Tests_macOS.swift */,
+				E46AFB102635327800AFBA4C /* Info.plist */,
+			);
+			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		E46AFB2E263532AB00AFBA4C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFB2F263532AB00AFBA4C /* WidgetKit.framework */,
+				E46AFB31263532AB00AFBA4C /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E46AFB33263532AB00AFBA4C /* HeyNellyWidget */ = {
+			isa = PBXGroup;
+			children = (
+				E46AFB34263532AB00AFBA4C /* HeyNellyWidget.swift */,
+				E46AFB36263532AB00AFBA4C /* HeyNellyWidget.intentdefinition */,
+				E46AFB37263532AC00AFBA4C /* Assets.xcassets */,
+				E46AFB39263532AC00AFBA4C /* Info.plist */,
+			);
+			path = HeyNellyWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E46AFAEE2635327800AFBA4C /* Hey Nelly (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46AFB192635327800AFBA4C /* Build configuration list for PBXNativeTarget "Hey Nelly (iOS)" */;
+			buildPhases = (
+				E46AFAEB2635327800AFBA4C /* Sources */,
+				E46AFAEC2635327800AFBA4C /* Frameworks */,
+				E46AFAED2635327800AFBA4C /* Resources */,
+				E46AFB42263532AC00AFBA4C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46AFB3D263532AC00AFBA4C /* PBXTargetDependency */,
+			);
+			name = "Hey Nelly (iOS)";
+			productName = "Hey Nelly (iOS)";
+			productReference = E46AFAEF2635327800AFBA4C /* Hey Nelly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E46AFAF62635327800AFBA4C /* Hey Nelly (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46AFB1C2635327800AFBA4C /* Build configuration list for PBXNativeTarget "Hey Nelly (macOS)" */;
+			buildPhases = (
+				E46AFAF32635327800AFBA4C /* Sources */,
+				E46AFAF42635327800AFBA4C /* Frameworks */,
+				E46AFAF52635327800AFBA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Hey Nelly (macOS)";
+			productName = "Hey Nelly (macOS)";
+			productReference = E46AFAF72635327800AFBA4C /* Hey Nelly.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E46AFAFE2635327800AFBA4C /* Tests iOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46AFB1F2635327800AFBA4C /* Build configuration list for PBXNativeTarget "Tests iOS" */;
+			buildPhases = (
+				E46AFAFB2635327800AFBA4C /* Sources */,
+				E46AFAFC2635327800AFBA4C /* Frameworks */,
+				E46AFAFD2635327800AFBA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46AFB012635327800AFBA4C /* PBXTargetDependency */,
+			);
+			name = "Tests iOS";
+			productName = "Tests iOS";
+			productReference = E46AFAFF2635327800AFBA4C /* Tests iOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E46AFB092635327800AFBA4C /* Tests macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46AFB222635327800AFBA4C /* Build configuration list for PBXNativeTarget "Tests macOS" */;
+			buildPhases = (
+				E46AFB062635327800AFBA4C /* Sources */,
+				E46AFB072635327800AFBA4C /* Frameworks */,
+				E46AFB082635327800AFBA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E46AFB0C2635327800AFBA4C /* PBXTargetDependency */,
+			);
+			name = "Tests macOS";
+			productName = "Tests macOS";
+			productReference = E46AFB0A2635327800AFBA4C /* Tests macOS.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		E46AFB2C263532AB00AFBA4C /* HeyNellyWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E46AFB3F263532AC00AFBA4C /* Build configuration list for PBXNativeTarget "HeyNellyWidgetExtension" */;
+			buildPhases = (
+				E46AFB29263532AB00AFBA4C /* Sources */,
+				E46AFB2A263532AB00AFBA4C /* Frameworks */,
+				E46AFB2B263532AB00AFBA4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HeyNellyWidgetExtension;
+			productName = HeyNellyWidgetExtension;
+			productReference = E46AFB2D263532AB00AFBA4C /* HeyNellyWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E46AFAE32635327700AFBA4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					E46AFAEE2635327800AFBA4C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					E46AFAF62635327800AFBA4C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					E46AFAFE2635327800AFBA4C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E46AFAEE2635327800AFBA4C;
+					};
+					E46AFB092635327800AFBA4C = {
+						CreatedOnToolsVersion = 12.2;
+						TestTargetID = E46AFAF62635327800AFBA4C;
+					};
+					E46AFB2C263532AB00AFBA4C = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = E46AFAE62635327700AFBA4C /* Build configuration list for PBXProject "Hey Nelly" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E46AFAE22635327700AFBA4C;
+			productRefGroup = E46AFAF02635327800AFBA4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E46AFAEE2635327800AFBA4C /* Hey Nelly (iOS) */,
+				E46AFAF62635327800AFBA4C /* Hey Nelly (macOS) */,
+				E46AFAFE2635327800AFBA4C /* Tests iOS */,
+				E46AFB092635327800AFBA4C /* Tests macOS */,
+				E46AFB2C263532AB00AFBA4C /* HeyNellyWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E46AFAED2635327800AFBA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB152635327800AFBA4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFAF52635327800AFBA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB162635327800AFBA4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFAFD2635327800AFBA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFB082635327800AFBA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFB2B263532AB00AFBA4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB38263532AC00AFBA4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E46AFAEB2635327800AFBA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB492635337600AFBA4C /* NellyData.swift in Sources */,
+				E46AFB522635416300AFBA4C /* ObservableNellyData.swift in Sources */,
+				E46AFB3B263532AC00AFBA4C /* HeyNellyWidget.intentdefinition in Sources */,
+				E46AFB132635327800AFBA4C /* ContentView.swift in Sources */,
+				E46AFB112635327800AFBA4C /* Hey_NellyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFAF32635327800AFBA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB142635327800AFBA4C /* ContentView.swift in Sources */,
+				E46AFB4A2635337600AFBA4C /* NellyData.swift in Sources */,
+				E46AFB122635327800AFBA4C /* Hey_NellyApp.swift in Sources */,
+				E46AFB532635416300AFBA4C /* ObservableNellyData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFAFB2635327800AFBA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB042635327800AFBA4C /* Tests_iOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFB062635327800AFBA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB0F2635327800AFBA4C /* Tests_macOS.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E46AFB29263532AB00AFBA4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E46AFB3A263532AC00AFBA4C /* HeyNellyWidget.intentdefinition in Sources */,
+				E46AFB4B2635337600AFBA4C /* NellyData.swift in Sources */,
+				E46AFB35263532AB00AFBA4C /* HeyNellyWidget.swift in Sources */,
+				E46AFB542635416300AFBA4C /* ObservableNellyData.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E46AFB012635327800AFBA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E46AFAEE2635327800AFBA4C /* Hey Nelly (iOS) */;
+			targetProxy = E46AFB002635327800AFBA4C /* PBXContainerItemProxy */;
+		};
+		E46AFB0C2635327800AFBA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E46AFAF62635327800AFBA4C /* Hey Nelly (macOS) */;
+			targetProxy = E46AFB0B2635327800AFBA4C /* PBXContainerItemProxy */;
+		};
+		E46AFB3D263532AC00AFBA4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E46AFB2C263532AB00AFBA4C /* HeyNellyWidgetExtension */;
+			targetProxy = E46AFB3C263532AC00AFBA4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E46AFB172635327800AFBA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E46AFB182635327800AFBA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E46AFB1A2635327800AFBA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hey Nelly.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Hey-Nelly";
+				PRODUCT_NAME = "Hey Nelly";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E46AFB1B2635327800AFBA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Hey Nelly.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Hey-Nelly";
+				PRODUCT_NAME = "Hey Nelly";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E46AFB1D2635327800AFBA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Hey-Nelly";
+				PRODUCT_NAME = "Hey Nelly";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E46AFB1E2635327800AFBA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Hey-Nelly";
+				PRODUCT_NAME = "Hey Nelly";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E46AFB202635327800AFBA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hey Nelly (iOS)";
+			};
+			name = Debug;
+		};
+		E46AFB212635327800AFBA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				INFOPLIST_FILE = "Tests iOS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Tests-iOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Hey Nelly (iOS)";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E46AFB232635327800AFBA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Hey Nelly (macOS)";
+			};
+			name = Debug;
+		};
+		E46AFB242635327800AFBA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				INFOPLIST_FILE = "Tests macOS/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Tests-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Hey Nelly (macOS)";
+			};
+			name = Release;
+		};
+		E46AFB40263532AC00AFBA4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				INFOPLIST_FILE = HeyNellyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Hey-Nelly.HeyNellyWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E46AFB41263532AC00AFBA4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A5BFZZUSPN;
+				INFOPLIST_FILE = HeyNellyWidget/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jazzlabs.Hey-Nelly.HeyNellyWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E46AFAE62635327700AFBA4C /* Build configuration list for PBXProject "Hey Nelly" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46AFB172635327800AFBA4C /* Debug */,
+				E46AFB182635327800AFBA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46AFB192635327800AFBA4C /* Build configuration list for PBXNativeTarget "Hey Nelly (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46AFB1A2635327800AFBA4C /* Debug */,
+				E46AFB1B2635327800AFBA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46AFB1C2635327800AFBA4C /* Build configuration list for PBXNativeTarget "Hey Nelly (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46AFB1D2635327800AFBA4C /* Debug */,
+				E46AFB1E2635327800AFBA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46AFB1F2635327800AFBA4C /* Build configuration list for PBXNativeTarget "Tests iOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46AFB202635327800AFBA4C /* Debug */,
+				E46AFB212635327800AFBA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46AFB222635327800AFBA4C /* Build configuration list for PBXNativeTarget "Tests macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46AFB232635327800AFBA4C /* Debug */,
+				E46AFB242635327800AFBA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E46AFB3F263532AC00AFBA4C /* Build configuration list for PBXNativeTarget "HeyNellyWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E46AFB40263532AC00AFBA4C /* Debug */,
+				E46AFB41263532AC00AFBA4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E46AFAE32635327700AFBA4C /* Project object */;
+}
